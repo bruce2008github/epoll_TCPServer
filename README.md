@@ -1,13 +1,15 @@
 Note:
 
-This tiny tcp servers implemented by c++ and use non-blocking IO and epoll(supported by Linux).
+I write this tiny tcp server by c++ , and use non-blocking IO and epoll(supported by Linux).
 
-This is just a prototype framework, currently support echo function as an example.
+It's just a prototype framework, currently support echo function as an example.
 
 *************************************************************************************
 I know the smart pointer is good thing, but in this framework I prefer to use the raw pointer.
-That's because the C++0x11 is not very popular currently, and I do NOT want to introduce the 
-unnecessary dependency, I avoid to use smart pointer and others 3rd lib(such as boost)
+That's because the C++0x11 is not very popular currently, 
+most the platform and compiler is not ready to support C++0x11,
+and I do NOT want to introduce the unnecessary dependency, 
+I avoid to use 3rd lib smart pointer (such as boost).
 **************************************************************************************
 
 It can handle thousands client tcp connections at same time.
